@@ -117,8 +117,7 @@ main {
 
 .heroImage {
   width: 100%;
-  /* height: auto;
-  Remove the height property if you want the image to maintain its original aspect ratio */
+  height: 80vh;
   object-fit: cover;
 }
 
@@ -134,7 +133,9 @@ main {
 
 #redBull,
 #greenLatent,
-#DiscJumbo {
+#DiscJumbo,
+#stickVacuums,
+#WetandDry {
   margin: 0 2%;
 }
 
@@ -163,25 +164,21 @@ main {
   height: 50%;
 }
 
-/* Media Query for Tablet Viewport
-@media screen and (min-width: 630px) { 
-
-  /* Tablet Viewport: Show tablet-desktop class, hide mobile class */ 
-  .tablet-desktop
-
-} */
-
 /* style rules for footer content */
+footer {
+  background-color: #000;
+}
+
 footer p {
-  font-size: 0.75em;
   text-align: center;
   color: #fff;
   padding: 0 1em;
 }
 
-footer p a {
+footer a {
   color: #fff;
   text-decoration: none;
+  text-align: center;
 }
 
 /* Media query for tablet viewport */
@@ -317,11 +314,11 @@ footer p a {
 }
 
     #form {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-left: 35%;
-        margin-top: 2%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 2% auto; /* Set margin to top/bottom 2% and auto for left/right */
+      max-width: 80%;
     }
 
     .form-grid {
@@ -369,3 +366,6 @@ footer p a {
       max-width: 800px; /* Adjust the width as needed */
       margin: 0 auto;
   }
+}
+
+
